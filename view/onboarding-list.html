@@ -1,0 +1,30 @@
+﻿<head>
+    <title>Onboarding Vacancies List</title>
+    <link rel="icon" href="./../../img/Helo-logo.png"/>
+</head>
+
+<body>
+    <a href="https://mhcaviation.com">
+        <img class="header-logo" src="./../../img/Helo-logo.png"/>
+    </a>
+    <div id="vacancies-list" class="loading">
+    </div>
+    <script type="module" src="./onboarding-list.js"></script>
+</body>
+
+<style>
+    .header-logo {
+        height: 120px;
+    }
+    #vacancies-list > * {
+        border-bottom: solid #dadada 1px;
+        padding: 6px;
+    }
+    .onboarding-welcome-text {
+        border-left: solid 4px #DADADAFF;
+        padding-left: 12px;
+    }
+    #vacancies-list.loading:after {
+        content: "Loading...";
+    }
+</style>

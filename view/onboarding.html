@@ -1,0 +1,91 @@
+﻿<head>
+    <title>Onboarding</title>
+    <link rel="icon" href="./../../img/Helo-logo.png"/>
+</head>
+
+<body>
+    <a href="https://mhcaviation.com">
+        <img class="header-logo" src="./../../img/Helo-logo.png"/>
+    </a>
+    <p id="status-panel">Loading...</p>
+    <div class="delimited-sections">
+        <h1 id="job-title"></h1>
+        <div>
+            <div class="facts-list">
+                <div>
+                    <b>Term: </b><span>Contract</span>
+                </div>
+                <div>
+                    <b>Ref: </b><span id="job-reference-code-holder">...</span>
+                </div>
+            </div>
+        </div>
+        <div id="job-description"></div>
+    </div>
+    <form>
+        <br/>
+        <input type="checkbox" id="privacy-notice-checkbox"/>
+        <label for="privacy-notice-checkbox">By applying, I confirm I have read and agreed to the <a target="_blank" href="https://www.mhcaviation.com/legal_documents/privacy_policy">Privacy Notice</a></label>
+        <div class="button-container">
+            <a id="apply-button">
+                <button type="button">APPLY FOR THE JOB</button>
+            </a>
+        </div>
+    </form>
+    <script type="module" src="./onboarding.js"></script>
+</body>
+<style>
+    h1 {
+        margin: 0;
+    }
+    .header-logo {
+        height: 120px;
+    }
+    .facts-list {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+    }
+    .delimited-sections > * {
+        border-bottom: solid 1px #DADADAFF;
+        padding: 18px;
+    }
+    a:not([href]) button {
+        cursor: wait;
+    }
+    #job-description {
+        white-space: pre-wrap;
+    }
+    #privacy-notice-checkbox {
+        cursor: pointer;
+        vertical-align: middle;
+    }
+    label[for="privacy-notice-checkbox"] {
+        cursor: pointer;
+    }
+    button {
+        color: white;
+        width: 300px;
+        font-size: 14px;
+        background-color: #0055FF;
+        cursor: pointer;
+        padding: 10px 16px;
+        line-height: 1.3333333;
+        border-radius: 6px;
+        border: 1px solid transparent;
+        margin: 12px;
+        user-select: none;
+    }
+    button:hover {
+    button:hover {
+    button:hover {
+    button:hover {
+        background-color: #014de1;
+    }
+    #privacy-notice-checkbox:not(:checked) ~ .button-container a {
+        pointer-events: none;
+    }
+    #privacy-notice-checkbox:not(:checked) ~ .button-container a button {
+        background-color: grey;
+    }
+</style>
