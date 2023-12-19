@@ -19,7 +19,7 @@ async function main() {
     document.getElementById("job-title").textContent = vacancy.JobTitle;
     document.getElementById("job-reference-code-holder").textContent = vacancy.JobRefNo;
     document.getElementById("job-description").textContent = vacancy.PublishedJobDescription;
-    document.getElementById("apply-button").setAttribute("href", "https://1rww.eu/Secure/Login.aspx?JobId=" + vacancy.JobId);
+    document.getElementById("apply-button").setAttribute("href", "https://hiportal.eu/Secure/Membership/Registration/Register.aspx?JobId=" + vacancy.JobId);
     statusPanel.textContent = "";
 }
 
